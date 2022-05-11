@@ -78,15 +78,14 @@ main h2 {
     font-size: 52px;
     line-height: 60px;
     color: #232C50;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
 main article img {
-    height: 100%;
+    width: 48%;    
 }
 
 #home {
-    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -98,7 +97,8 @@ main article img {
     justify-content: space-evenly;
     align-items: center;
     height: 450px;
-    width: 445px;
+    width: 50%;
+    margin-left: 10px;
 }
 
 #home p {
@@ -108,7 +108,7 @@ main article img {
     font-size: 16px;
     line-height: 157.1%;
     color: #232C50;
-    padding: 20px px 0px 0px;
+    padding: 20px 0px 0px 0px;
 }
 
 #home button {
@@ -120,7 +120,6 @@ main article img {
     width: 130px;
     height: 50px;
     cursor: pointer;
-    margin-right: 310px;
 }
 
 #medio {
@@ -128,7 +127,7 @@ main article img {
     flex-wrap: wrap;
     justify-content: space-evenly; 
     height: 700px;
-    padding-top: 50px;
+    margin-top: 100px;
 }
 
 #medio h3 {
@@ -156,13 +155,11 @@ main article img {
     font-weight: 500;
     font-size: 16px;
     line-height: 151.1%;
-    color: #232851;
-    width: 500px;
+    color: #232851; 
 }
 
 #list div {
     padding-top: 30px;
-    width: 500px;
     counter-increment: text;
 }
 
@@ -170,12 +167,10 @@ main article img {
     color: #B3B2B7;
     padding-top: 10px;
     line-height: 25.52px;
-    padding-left: 60px;
 
 }
 
-h5 {
-    display: inline;
+h5 {    
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -189,7 +184,7 @@ h5 {
     flex-direction: column;
     width: 100%;
     height: 550px;
-    margin-top: 15px;
+    margin-top: 100px;
 }
 
 #testimonios h3 {
@@ -252,7 +247,6 @@ h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100% ;
     height: 191px;
     margin-top: 100px;
     background-color: #F3603B;
@@ -261,9 +255,8 @@ h6 {
 
 #bajo h3 {
     font-family: 'Be Vietnam Pro', sans-serif;
-    font-size: 30px;
+    font-size: 36px;
     color: #FFFFFF;
-    width: 500px;
 }
 
 #bajo button {
@@ -327,7 +320,7 @@ footer ul {
 
 form {
     display: flex;
-    gap: 5px;
+    gap: 5px
 }
 
 input {
@@ -436,6 +429,17 @@ footer i:hover {
     transform: scale(1.5);
 }
 
+@media (max-width: 1024px) {
+    #home img {
+        width: 50%;
+        height: 50%;
+    }
+
+    #home div {
+        width: 100%;
+        text-align: center;
+    }
+}
 
 @media (max-width: 768px) {
     header ul{
@@ -446,8 +450,22 @@ footer i:hover {
         width: 140px;
     }
     
+    #home div {
+        width: 100%;    
+    }
+
+    #home img {
+        width: 100%;
+    }
+    
+    #home h2 {
+        display: inline;
+        font-size: 40px;
+        text-align: center;
+    }
+
     #derecha {
-        width: 220px
+        width: 220px;
     }
 
     #derecha button {
@@ -455,7 +473,7 @@ footer i:hover {
     }
 }
 
-@media (max-width: 596px) {
+@media (max-width: 587px) {
     
     header nav{
         justify-content: space-between;
@@ -474,13 +492,26 @@ footer i:hover {
         margin-top: 14px
     }
 
+    main h5 {
+        text-align: center;
+    }
+
     main h2 {
         font-size: 44px;
+    }
+
+    #list p {
+        font-size: 14px;
+        text-align: center;
     }
 
     #bajo h3 {
         font-size: 24px;
         }
+
+    #bajo button {
+        width: 250px;
+    }
 
     #testimonios .testimoniosimg {
         display: none;
@@ -516,7 +547,6 @@ footer i:hover {
 
     footer div {
         justify-content: space-around;
-        margin-right: 50px;
         width: 100%;
     }
 
@@ -528,8 +558,34 @@ footer i:hover {
         width: 35px;
         height: 35px;
     }
+
+    footer div ul {
+        font-size: 16px;
+    }
+
+    h5:before {
+        display: none;
+    }
 }
 
+@media (max-width: 470px) {
+    div h2 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    #bajo button {
+        width: 150px;
+    }
+
+    form {
+        flex-wrap: wrap;
+    }
+
+    form button {
+        width: 150px;
+    }
+}
 
 @media (max-width: 375px) {
 
@@ -559,7 +615,6 @@ footer i:hover {
     #home {
         width: 100%;
         display: flex;
-        flex-direction: column-reverse;
     }
 
     #home img {
@@ -614,7 +669,6 @@ footer i:hover {
 
     #list h5 {
         width: 100%;
-        text-align: left;
         padding-top: 5px;
     }
 
@@ -625,13 +679,12 @@ footer i:hover {
     #list p {
         width: 100%;
         padding-top: 15px;
-        padding-left: 15px;
         font-size: 14px;
     }
 
     #testimonios {
         width: 100%;
-        margin-top: 200px;
+        margin-top: 400px;
     }
 
     #testimonios .testimoniosimg {
@@ -657,10 +710,10 @@ footer i:hover {
         width: 100%;
         font-weight: 600;
         margin-top: 80px;
-        font-size: 32px;
+        font-size: 28px;
         padding: 0px 50px 0px 50px;
         text-align: center;
-        line-height: 52px;
+        line-height: 30px;
     }
 
     #bajo button {
@@ -715,5 +768,9 @@ footer i:hover {
     footer div img {
         width: 35px;
         height: 35px;
+    }
+
+    footer div li {
+        font-size: 14px;
     }
 }
