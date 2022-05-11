@@ -14,6 +14,9 @@ body {
 header {
     width: 100%;
     height: 130px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.50);    
 }
 
 header nav {
@@ -36,6 +39,7 @@ header ul {
     font-family: 'Roboto', sans-serif;
     color: #242E52;
     padding: 10px;
+    cursor: pointer;
 }
 
 header button {
@@ -212,6 +216,7 @@ h6 {
 }
 
 #testimonios img {
+    border-radius: 60%;
     height: 70px;
     width: 70px;
 }
@@ -357,11 +362,13 @@ input::placeholder {
 
 footer i {
     color: white;
+    cursor: pointer;
     transition: all 0.2s
 }
 
 li:hover {
     color: #F3603B;
+    cursor: pointer;
 }
 
 button:hover {
